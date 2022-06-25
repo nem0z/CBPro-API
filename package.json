@@ -1,11 +1,10 @@
 {
-  "name": "CBPro-API",
+  "name": "cbpro-api",
   "version": "1.0.0",
-  "description": "A module for coinbase pro api",
+  "description": "A node module to use coinbase pro api",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "test",
     "start": "node index.js"
   },
   "repository": {
@@ -15,7 +14,9 @@
   "keywords": [
     "coinbase",
     "pro",
-    "api"
+    "api",
+    "node",
+    "module"
   ],
   "author": "nem0z",
   "license": "MIT",
@@ -24,8 +25,6 @@
   },
   "homepage": "https://github.com/nem0z/CBPro-API#readme",
   "dependencies": {
-    "crypto": "^1.0.1",
-    "crypto-js": "^4.1.1",
     "node-fetch": "^3.2.6"
   }
 }
