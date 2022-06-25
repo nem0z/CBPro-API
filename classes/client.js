@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import crypto from 'crypto';
 
-class Client {
+class CBPClient {
     constructor(API_KEY, API_SECRET, PASSPHRASE) {
         this.API_KEY = API_KEY;
         this.PASSPHRASE = PASSPHRASE;
