@@ -42,7 +42,19 @@ class Client {
         return this.request('https://api.exchange.coinbase.com/accounts', 'GET', '/accounts', '')
                 .then(res => res.json())
                 .then(accounts => filter ? accounts.filter(acc => acc.balance > 0) : accounts)
-                .catch(err => console.error(err));
+                .catch(err =>  {
+                    console.error(err); 
+                    return err;
+                });
+    }
+
+    getOrders() {
+        return this.request('https://api.exchange.coinbase.com/orders?sortedBy=created_at&sorting=desc&limit=1000&status=done', 'GET', '/orders?sortedBy=created_at&sorting=desc&limit=1000&status=done', '')
+        .then(res => res.json())
+        .catch(err =>  {
+            console.error(err); 
+            return err;
+        });
     }
 }
 
