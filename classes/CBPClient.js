@@ -58,4 +58,4 @@ class CBPClient {
     }
 }
 
-export default Client;
+export default CBPClient;

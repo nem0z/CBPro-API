@@ -1,4 +1,4 @@
-import Client from './classes/client.js';
+import CBPClient from './classes/CBPClient.js';
 import keys from './keys.js';
 
 const url = 'https://api.exchange.coinbase.com/accounts';
